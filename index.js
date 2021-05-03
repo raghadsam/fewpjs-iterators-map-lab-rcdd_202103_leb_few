@@ -17,7 +17,7 @@ const titleCased = () => {
 //Array of words like ["What , "is" , "JSONP"]
        let result=separatedArray.map(function(word){
             return word.charAt(0).toUpperCase()+word.substring(1);
-            
+
 })
    //result.join(" ");
 console.log(result)
