@@ -1,7 +1,7 @@
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
-  'implementing Blockchain Web API',
+  'implementing Blockchain Web API',s
   'The Test Driven Development Workflow',
   'What is NaN and how Can we Check for it',
   'What is the difference between stopPropagation and preventDefault?',
@@ -12,11 +12,17 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  const modifiedTitles=tutorials.map((array) =>{//array li fi sentence
-          let separateWords=array.split(" ");//separateWordssar array fi b albo words
-      separateWords.map(function(word)
-                      {word.charAt(0).toUpperCase()+word.substring(1);
-                          return separateWords.join(" ");}
+  let modifiedArray=tutorials.map(function(tutorial){
+     let separatedArray=tutorial.split(" ");
+//Array of words like ["What , "is" , "JSONP"]
+       let result=separatedArray.map(function(word){
+            return word.charAt(0).toUpperCase()+word.substring(1);
+            
+})
+   //result.join(" ");
+console.log(result)
 
-          );
-        return array}
+
+
+return result.join(" ");
+                    });
