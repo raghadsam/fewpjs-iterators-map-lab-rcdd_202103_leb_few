@@ -12,5 +12,11 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
-}
+  const modifiedTitles=tutorials.map((array) =>{//array li fi sentence
+          let separateWords=array.split(" ");//separateWordssar array fi b albo words
+      separateWords.map(function(word)
+                      {word.charAt(0).toUpperCase()+word.substring(1);
+                          return separateWords.join(" ");}
+
+          );
+        return array}
